@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueWorld — Question 1</title>
+  <link rel="stylesheet" href="two.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="nav-list">
+      <li><a href="one.html" class="active">One</a></li>
+      <li><a href="two.html">Two</a></li>
+    
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1 class="question">
+      Let A be the answer of the previous question.<br>
+      The Valentine's arrow is made of: <br>A triangular tip with base equal to 4A cm and height equal to 3A cm.<br>
+      A rectangular shaft with length equal to 10A cm and width equal to A cm.<br>
+      Find total area of the arrow.<br>
+    </h1>
+    <img src="arr.png" alt="Cardioid" class="arrimage">
+
+    <div class="input-group">
+      <input type="text" id="answer" >
+      <button id="submit">Submit</button>
+    </div>
+
+    <p id="feedback"></p>
+    <button id="next" onclick="goNext()">Next Question</button>
+  </div>
+
+  <script src="two.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  font-family: 'Georgia', serif; 
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  background-color: #000; /* Black navbar */
+  padding: 12px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em; /* smaller font */
+  font-family: 'Garamond', serif;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-list li a.active {
+  font-weight: bold;
+}
+
+.nav-list li a:hover {
+  transform: translateY(-6px);
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 100px auto 0 auto; /* push below navbar */
+  text-align: center;
+}
+
+.question {
+  font-size: 1.1em; /* slightly smaller font */
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+
+.formula, .pi, .var {
+  font-weight: bold;
+}
+.gridimage {
+  width: 300px;
+  margin: 20px auto;
+  display: block;
+}
+.fiveimage {
+  width: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 1.2em; /* smaller font */
+  width: 140px;
+  text-align: center;
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+button {
+  padding: 8px 18px;
+  font-size: 1.1em;
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  background-color: #000;
+  color: #fff;
+}
+
+#next {
+  display: none;
+  margin-top: 20px;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 1.1em;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueWorld — Question 1</title>
+  <link rel="stylesheet" href="one.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="nav-list">
+      <li><a href="one.html" class="active">One</a></li>
+     
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1 class="question">
+      A heart-shaped curve (cardioid) is given by the polar equation:<br>
+      <span class="formula">r = a(1 + cos θ)</span><br>
+      If the area of this curve is <span class="pi">13.5π</span> square units, find the value of the parameter <span class="var">a</span>.
+    </h1>
+    <img src="car.png" alt="Cardioid" class="carimage">
+
+    <div class="input-group">
+      <input type="text" id="answer" >
+      <button id="submit">Submit</button>
+    </div>
+
+    <p id="feedback"></p>
+    <button id="next" onclick="goNext()">Next Question</button>
+  </div>
+
+  <script src="one.js"></script>
+</body>
+</html>
